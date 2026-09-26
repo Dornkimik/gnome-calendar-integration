@@ -12,7 +12,7 @@ An Omarchy bar widget showing the next event in the local GNOME Calendar. Left c
 ## Omarchy installation
 
 ```bash
-omarchy plugin add https://github.com/Dornkimik/gnome-calendar-local.git --enable
+omarchy plugin add https://github.com/Dornkimik/gnome-calendar-integration.git --enable
 ```
 
 The widget reads the `system-calendar` calendar every minute and displays the next current or future event. It runs `/usr/bin/python scripts/next_event.py` locally and does not send calendar data to a network service. Disable or remove it with `omarchy plugin disable dornkimik.gnome-calendar` or `omarchy plugin remove dornkimik.gnome-calendar`.
