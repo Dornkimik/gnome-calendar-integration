@@ -9,26 +9,7 @@ An Omarchy bar widget showing the next event in the local GNOME Calendar. Left c
 - Access to the user's session D-Bus
 - Omarchy 4 for the bar widget
 
-## Set up a new Omarchy device
-
-Install the same integration used on the original device:
-
-```bash
-sudo pacman -S --needed gnome-calendar evolution-data-server python-gobject
-gnome-calendar
-omarchy plugin add https://github.com/Dornkimik/gnome-calendar-integration.git --enable
-omarchy bar move dornkimik.gnome-calendar --section right --index 1
-codex plugin marketplace add Dornkimik/gnome-calendar-integration
-codex plugin add gnome-calendar-local@gnome-calendar-integration
-```
-
-Open a new Codex chat after installing the plugin. The Omarchy widget and the Codex plugin are separate installations. The Omarchy command places the widget immediately after the system tray, matching the original device. The included marketplace entry installs the entire repository as a Codex plugin, including all three Python scripts.
-
-The widget reads the local Evolution Data Server calendar with UID `system-calendar` (usually **Personal**). Create or enable that calendar in GNOME Calendar and arrange for your appointments to appear there on the new device. This repository does not contain or transfer personal appointments, account credentials, or calendar data.
-
-The widget needs the desktop user's session D-Bus. Test the local calendar reader with `/usr/bin/python scripts/next_event.py` from a clone of this repository if it says the calendar is unavailable. The Codex creation script defaults to `Europe/Berlin`; pass `--timezone` for another time zone.
-
-## Omarchy widget
+## Omarchy installation
 
 ```bash
 omarchy plugin add https://github.com/Dornkimik/gnome-calendar-integration.git --enable
