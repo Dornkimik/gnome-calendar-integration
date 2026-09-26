@@ -1,6 +1,6 @@
 {
   "name": "gnome-calendar-local",
-  "version": "0.1.0+codex.20260926102105",
+  "version": "0.1.0+codex.20260926103741",
   "description": "Create, list, and delete appointments in the local GNOME Calendar on this Linux machine.",
   "author": {
     "name": "Local developer"
