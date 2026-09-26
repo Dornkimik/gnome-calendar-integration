@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "dornkimik.gnome-calendar",
-  "name": "GNOME Calendar Next Event",
+  "name": "GNOME Calendar Integration",
   "version": "0.1.0",
   "author": "DevOminik",
   "license": "MIT",
@@ -9,7 +9,7 @@
   "kinds": ["bar-widget"],
   "entryPoints": { "barWidget": "BarWidget.qml" },
   "barWidget": {
-    "displayName": "Next Calendar Event",
+    "displayName": "GNOME Calendar Integration",
     "description": "The next event from the local GNOME Calendar",
     "category": "Time",
     "allowMultiple": false,

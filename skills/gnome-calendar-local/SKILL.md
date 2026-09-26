@@ -3,7 +3,7 @@ name: gnome-calendar-local
 description: Create, list, or delete personal appointments in the user's local GNOME Calendar on this Linux machine. Use when the user asks to add, inspect, or remove local calendar events, unless they explicitly choose another calendar.
 ---
 
-# GNOME Calendar
+# GNOME Calendar Integration
 
 Use the bundled `scripts/create_event.py` to create and verify appointments through Evolution Data Server. Resolve the script path relative to this `SKILL.md`: `../../scripts/create_event.py`. The default calendar UID is `system-calendar` (Personal), and the default time zone is `Europe/Berlin`; pass `--timezone` for another time zone.
 

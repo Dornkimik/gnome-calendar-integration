@@ -1,4 +1,4 @@
-# GNOME Calendar (local)
+# GNOME Calendar Integration
 
 An Omarchy bar widget showing the next event in the local GNOME Calendar. Left click opens GNOME Calendar; middle click refreshes the widget. It also includes a Codex skill and scripts to create, list, and delete events through Evolution Data Server.
 
