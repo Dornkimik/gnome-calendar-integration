@@ -1,16 +1,25 @@
-# GNOME Calendar (local) Codex plugin
+# GNOME Calendar (local)
 
-Create, list, and delete events in a local GNOME Calendar through Evolution Data Server. The plugin includes a Codex skill and two Python scripts.
+An Omarchy bar widget showing the next event in the local GNOME Calendar. Left click opens GNOME Calendar; middle click refreshes the widget. It also includes a Codex skill and scripts to create, list, and delete events through Evolution Data Server.
 
 ## Requirements
 
 - Linux desktop session with GNOME Calendar and Evolution Data Server
 - Python 3 with PyGObject and the `ECal`, `EDataServer`, and `ICalGLib` GI typelibs
 - Access to the user's session D-Bus
+- Omarchy 4 for the bar widget
 
-## Usage
+## Omarchy installation
 
-Install the plugin from this repository in Codex, or run the scripts directly:
+```bash
+omarchy plugin add https://github.com/Dornkimik/gnome-calendar-local.git --enable
+```
+
+The widget reads the `system-calendar` calendar every minute and displays the next current or future event. It runs `/usr/bin/python scripts/next_event.py` locally and does not send calendar data to a network service. Disable or remove it with `omarchy plugin disable dornkimik.gnome-calendar` or `omarchy plugin remove dornkimik.gnome-calendar`.
+
+## Codex plugin and scripts
+
+Install this repository as a Codex plugin, or run the scripts directly:
 
 ```bash
 /usr/bin/python scripts/create_event.py --start 2026-09-28T15:00 --end 2026-09-28T16:00 --title Termin
